@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Static Template</title>
+  </head>
+  <body>
+    <h1>Créer votre compte</h1>
+    <p>Voir la <a href="./page2.html">page</a></p>
+    <form>
+      <div>
+        <label for="nom">Votre nom : </label
+        ><input type="text" id="nom" name="nom" />
+        <p id="err_nom"></p>
+      </div>
+      <div>
+        <label for="prenom">Votre prenom : </label
+        ><input type="text" id="prenom" name="prenom" />
+        <p id="err_prenom"></p>
+      </div>
+      <div>
+        <label for="email">Votre email : </label
+        ><input type="email" id="email" name="email" />
+        <p id="err_email"></p>
+      </div>
+      <input id="btnSubmit" type="submit" value="Créer" />
+      <!-- <button id="btnSubmit" type="submit">Créer</button> -->
+    </form>
+    <br /><br />
+    <h2>Liste des utilisateurs</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <!-- <th>#</th> -->
+          <th>Nom</th>
+          <th>Prenom</th>
+          <th>Email</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="listeUtilisateurs"></tbody>
+    </table>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+      integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>

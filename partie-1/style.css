@@ -1,0 +1,21 @@
+.text {
+  color: white;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.text-danger {
+  background-color: red;
+}
+
+.text-success {
+  background-color: green;
+}
+
+.mouse {
+  cursor: pointer;
+}
+
+.barre {
+  text-decoration: line-through;
+}
